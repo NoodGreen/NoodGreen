@@ -1,8 +1,7 @@
-const express = require("express"); //handle requests and responses, eg: listen to shop.
-const fs = require("fs"); //file system will handle, system files.
+const express = require("express");
+const fs = require("fs");
 
-//read
-const data = JSON.parse(fs.readFileSync("./items.json", "utf-8")); //JSON.parse Converts the JSON text into a JavaScript object.
+const data = JSON.parse(fs.readFileSync("./items.json", "utf-8"));
 const images = data.images || [];
 
 exports.checkID = (req, res, next, val) => {
@@ -15,11 +14,8 @@ exports.checkID = (req, res, next, val) => {
   next();
 };
 
-//contollers
 exports.getAllImages = (req, res) => {
-  //this funtion with two arguments req, res.
   res.status(200).json({
-    //res.status(200) which mean everything is okay, and send data formate in JSON.
     status: "sucess",
     data: {
       images,
