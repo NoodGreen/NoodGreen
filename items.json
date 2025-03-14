@@ -1,0 +1,16 @@
+[
+  {
+    "name": "home",
+    "price": 5000,
+    "ratingsAverage": 5,
+    "summary": "Pixel art home illustration",
+    "difficulty": "easy"
+  },
+  {
+    "name": "menu",
+    "price": 10000,
+    "ratingsAverage": 4.5,
+    "summary": "Pixel art menu illustration",
+    "difficulty": "medium"
+  }
+]
